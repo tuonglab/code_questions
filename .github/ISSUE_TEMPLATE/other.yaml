@@ -1,0 +1,43 @@
+name: Other
+description: Ask a question about other code issues.
+labels: question
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the question
+      description: A clear and concise description of what the main question is.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: repex
+    attributes:
+      label: Minimal example
+      description: A code snippet that you have tried and have questions about
+      render: bash
+      placeholder: |
+        do_something_that_you_are_wondering_about --data
+
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Any error message produced by the code above
+      description: Please paste the entire error message if any
+      render: bash
+      placeholder: |
+        some error
+   
+  - type: textarea
+    id: os
+    attributes:
+      label: OS information
+      placeholder: |
+        e.g. MacOS
+  
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: |
+        Add any other context about the problem here.
