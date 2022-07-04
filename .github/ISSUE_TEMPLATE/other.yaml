@@ -1,5 +1,5 @@
 name: Other code
-description: Ask a question about Python code.
+description: Ask a question about other code.
 labels: question
 body:
   - type: textarea
