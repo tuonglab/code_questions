@@ -1,4 +1,4 @@
-name: Other
+name: Unrelated to python/R e.g. bash
 description: Ask a question about other code issues.
 labels: question
 body:

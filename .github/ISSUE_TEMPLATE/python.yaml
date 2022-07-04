@@ -1,5 +1,5 @@
-name: python code
-description: Ask a question about python code.
+name: Python code
+description: Ask a question about Python code.
 labels: question
 body:
   - type: textarea
