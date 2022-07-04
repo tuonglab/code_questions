@@ -1,0 +1,65 @@
+name: python
+description: Ask a question about python code.
+labels: question
+body:
+  - type: markdown
+    attributes:
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the question
+      description: A clear and concise description of what the main question is.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: repex
+    attributes:
+      label: Minimal example
+      description: A code snippet that you have tried and have questions about
+      render: python
+      placeholder: |
+        import dandelion as ddl
+        vdj = ddl.Dandelion(airr_dataframe)
+
+        ddl.do_something_that_you_are_wondering_about(vdj)
+
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Any error message produced by the code above
+      description: Please paste the entire error message if any
+      render: pytb
+      placeholder: |
+        ---------------------------------------------------------------------------
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+          File "/Users/kt16/Documents/Github/dandelion/dandelion/utilities/_core.py", line 49, in __init__
+            self.data = load_data(data)
+          File "/Users/kt16/Documents/Github/dandelion/dandelion/utilities/_utilities.py", line 564, in load_data
+            raise FileNotFoundError(
+        FileNotFoundError: Either input is not of <class 'pandas.core.frame.DataFrame'> or file does not exist.
+   
+  - type: textarea
+    id: os
+    attributes:
+      label: OS information
+      placeholder: |
+        e.g. MacOS
+  
+  - type: textarea
+    id: versions
+    attributes:
+      label: freeze
+      description: Please paste everything from `pip freeze` or `conda env list --name [environment`
+      placeholder: |
+        pandas==1.4.2
+        ipython-genutils==0.2.0
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: |
+        Add any other context about the problem here.
