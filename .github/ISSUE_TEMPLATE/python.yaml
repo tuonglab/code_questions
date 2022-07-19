@@ -48,7 +48,7 @@ body:
   - type: textarea
     id: versions
     attributes:
-      label: freeze
+      label: versions
       description: Please paste everything from `pip freeze` or `conda env list --name [environment]`
       placeholder: |
         pandas==1.4.2
