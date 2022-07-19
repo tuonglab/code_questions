@@ -41,7 +41,7 @@ body:
   - type: textarea
     id: versions
     attributes:
-      label: sessioninfo
+      label: Session info
       description: Please paste everything from `sessionInfo()`
       placeholder: |
         R version 4.1.3 (2022-03-10)
